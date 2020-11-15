@@ -9,16 +9,16 @@ public class Comentarios {
 
     @Id
     private String id = new ObjectId().toString();
-    private String Usuario, Comentario, IdPelicula;
+    private String usuario, comentario, idPelicula;
 
     public Comentarios(String s) {
     }
 
     public Comentarios(String id, String usuario, String comentario, String idPelicula) {
         this.id = id;
-        Usuario = usuario;
-        Comentario = comentario;
-        IdPelicula = idPelicula;
+        this.usuario = usuario;
+        this.comentario = comentario;
+        this.idPelicula = idPelicula;
     }
 
     public String getId() {
@@ -30,26 +30,26 @@ public class Comentarios {
     }
 
     public String getUsuario() {
-        return Usuario;
+        return usuario;
     }
 
     public void setUsuario(String usuario) {
-        Usuario = usuario;
+        this.usuario = usuario;
     }
 
     public String getComentario() {
-        return Comentario;
+        return comentario;
     }
 
     public void setComentario(String comentario) {
-        Comentario = comentario;
+        this.comentario = comentario;
     }
 
     public String getIdPelicula() {
-        return IdPelicula;
+        return idPelicula;
     }
 
     public void setIdPelicula(String idPelicula) {
-        IdPelicula = idPelicula;
+        this.idPelicula = idPelicula;
     }
 }
